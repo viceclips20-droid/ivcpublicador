@@ -1,0 +1,6 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IVC Publicador - Authorization</title><style>body{font-family:Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222}code{word-break:break-all}</style></head><body>
+<h1>IVC Publicador</h1>
+<p id="msg">Authorization received. You can close this page and go back to the tool.</p>
+<p><b>Code:</b> <code id="c"></code></p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').textContent=p.get('code')||'(none)';if(p.get('error')){document.getElementById('msg').textContent='Authorization error: '+p.get('error');}</script>
+</body></html>
